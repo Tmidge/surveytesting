@@ -22,6 +22,6 @@ class AuthorTest < ActiveSupport::TestCase
   #end
 
   test "can find by email" do
-    assert_equal @author, Author.find_specific_email("Thomas@author.com")
+    assert_equal @author, Author.find_specific_email("Thomas@author.com").first
   end
 end
